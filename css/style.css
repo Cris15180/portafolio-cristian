@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #171717;
+  background-color: #0f0f0f;
 }
 
 #hero{
@@ -29,6 +29,10 @@ body {
     margin: 0;
 }
 
+.sobre-mi p{
+    width: 76vh;
+}
+
 .sobre-mi{
     display: flex;
     flex-direction: column;
@@ -36,7 +40,6 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
-    max-width: 100vh;
     gap: 27px;
 }
 
@@ -84,11 +87,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: normal;
     margin: 0 auto;
     padding: 20px;
     max-width: 150vh;
     width: 100%;
+    height: 70vh;
     gap: 10vh;
 }
     
@@ -97,19 +101,64 @@ body {
     line-height: 1.6;
     text-align: left;
     gap: 20px;
+    margin-top: 4vh;
 }
 
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh;
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 10px;
+    justify-items: center;
+}
+
+.habilidades-contenedor-visible header {
+    background-color: #030364;
+    width: 37vh;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .iconos {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: column;
+    gap: 30px;
+}
+
+.icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.habilidades-contenedor-visible {
+     background-color: #1f2937;
+    border-radius: 16px;
+    border: 1px solid #2d3748;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 37vh;
+    height: 24vh;
+    border-radius: 8px;
+}
+
+.habilidades-contenedor-visible header:hover {
+    background-color: #043487;
+    transition: background-color 0.3s ease;
+}
+
+.habilidades-contenedor-visible:hover {
+    background-color: #2d3748;
+    transition: background-color 0.3s ease;
+}
+
+.icono:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease-in-out;
 }
